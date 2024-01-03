@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    background: #2a2734;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fefefe;
+}
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+.carousel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+
+.image{
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgb(0,0,0,0.5);
+    display: flex;
+}
+span{
+    margin: auto;
+    font-size: 2em;
+}
+@keyframes rotate360{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+.image:nth-child(1){
+    background-image: url(https://img.freepik.com/premium-photo/image-planet-outer-space-mixed-media-elements-image-furnished-by-nasa_641298-3434.jpg?w=2000);
+    transform: rotateY(0deg) translateZ(430px);
+}
+.image:nth-child(2){
+    background-image: url(https://media.istockphoto.com/id/479423528/photo/earth-view-from-outer-space-background.jpg?s=170667a&w=0&k=20&c=pSe5Q9oIR3i3D5b9HWHKr5QQFZjlQXpeT0yn_wFZgms=);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.image:nth-child(3){
+    background-image: url(https://cutewallpaper.org/21/space-background-photos/10+-Beautiful-Space-Backgrounds-For-Desktop-FreeCreatives.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+.image:nth-child(4){
+    background-image: url(https://media.istockphoto.com/id/1354441996/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?b=1&s=170667a&w=0&k=20&c=O_VZbgONe4WTXPOEvwKYezhqFkzAXpr2g-lCdpdj5FU=);
+    transform: rotateY(120deg) translateZ(430px);
+}
+.image:nth-child(5){
+    background-image: url(https://static.addtoany.com/images/dracaena-cinnabari.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+.image:nth-child(6){
+    background-image: url(https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+.image:nth-child(7){
+    background-image: url(https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true);
+    transform: rotateY(240deg) translateZ(430px);
+}
+.image:nth-child(8){
+    background-image: url(https://pe-images.s3.amazonaws.com/type/effects/image-in-text/new/hawaii.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+.image:nth-child(9){
+    background-image: url(https://pe-images.s3.amazonaws.com/photo-editing/selecting-hair/beach.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
